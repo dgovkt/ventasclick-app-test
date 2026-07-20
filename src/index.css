@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.manual-content h1 {
+  @apply text-3xl font-bold mb-4 mt-8 text-gray-900;
+}
+
+.manual-content h2 {
+  @apply text-2xl font-semibold mb-3 mt-6 text-gray-900;
+}
+
+.manual-content h3 {
+  @apply text-xl font-medium mb-2 mt-4 text-gray-800;
+}
+
+.manual-content h4 {
+  @apply text-lg font-medium mb-2 mt-3 text-gray-800;
+}
+
+.manual-content p {
+  @apply mb-4 text-gray-700 leading-relaxed;
+}
+
+.manual-content ul {
+  @apply list-disc list-inside mb-4 space-y-2;
+}
+
+.manual-content ol {
+  @apply list-decimal list-inside mb-4 space-y-2;
+}
+
+.manual-content li {
+  @apply text-gray-700;
+}
+
+.manual-content a {
+  @apply text-blue-600 hover:text-blue-800 underline;
+}
+
+.manual-content strong {
+  @apply font-semibold text-gray-900;
+}
+
+.manual-content em {
+  @apply italic;
+}
+
+.manual-content blockquote {
+  @apply border-l-4 border-gray-300 pl-4 py-2 mb-4 italic text-gray-600;
+}
+
+.manual-content code {
+  @apply bg-gray-100 text-gray-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.manual-content pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-lg mb-4 overflow-x-auto;
+}
+
+.manual-content pre code {
+  @apply bg-transparent text-gray-100 p-0;
+}
+
+.manual-content table {
+  @apply w-full mb-4 border-collapse;
+}
+
+.manual-content thead {
+  @apply bg-gray-100;
+}
+
+.manual-content th {
+  @apply border border-gray-300 px-4 py-2 text-left font-semibold text-gray-900;
+}
+
+.manual-content td {
+  @apply border border-gray-300 px-4 py-2 text-gray-700;
+}
+
+.manual-content tbody tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.manual-content img {
+  @apply max-w-full rounded-lg shadow-md mb-4;
+}
+
+.manual-content .alert-tip {
+  @apply bg-blue-50 border-l-4 border-blue-500 p-4 mb-4 rounded-r;
+}
+
+.manual-content .alert-warning {
+  @apply bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-4 rounded-r;
+}
+
+.manual-content .alert-error {
+  @apply bg-red-50 border-l-4 border-red-500 p-4 mb-4 rounded-r;
+}
+
+.manual-content .alert-success {
+  @apply bg-green-50 border-l-4 border-green-500 p-4 mb-4 rounded-r;
+}
+
+.manual-content hr {
+  @apply my-8 border-gray-300;
+}
+
+.kb-editor-quill .ql-container {
+  min-height: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.kb-editor-quill .ql-editor {
+  min-height: 200px;
+}
