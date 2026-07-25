@@ -97,7 +97,7 @@ export const Login: React.FC = () => {
 
         <div className="mt-6 pt-6 border-t border-gray-200 text-center">
           <Link to="/" className="text-gray-600 hover:text-gray-900 text-sm">
-            Volver al inicio
+            Volver al inicio.
           </Link>
         </div>
       </div>
