@@ -14,7 +14,7 @@ export type WizardStep = 'welcome' | 'diagnosis' | 'plan_details' | 'post_purcha
 
 type Screen =
   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17
-  | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 'datos';
+  | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 28 | 29 | 30 | 31 | 'datos';
 
 type DataIntent = 'comprar' | 'dejar_datos' | null;
 
@@ -306,7 +306,7 @@ export function WizardFlow({ socioId, sessionId, content, onComplete, onPurchase
       });
 
       await markDone();
-      go(plan === 'presencia_web' ? 16 : 27);
+      go(plan === 'presencia_web' ? 16 : 31);
     } catch (err) {
       console.error(err);
       alert('Error al guardar. Intenta de nuevo.');
@@ -317,7 +317,7 @@ export function WizardFlow({ socioId, sessionId, content, onComplete, onPurchase
 
   const handleNoDejarDatos = async () => {
     await markDone();
-    go(plan === 'presencia_web' ? 16 : 27);
+    go(plan === 'presencia_web' ? 16 : 31);
   };
 
   const handleFileSelect = (files: FileList | null) => {
